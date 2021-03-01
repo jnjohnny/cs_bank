@@ -6,20 +6,37 @@ using System.Threading.Tasks;
 
 namespace lab1
 {
-    public class Account
+    class Account
     {
         private int accountNumber;
         private string accountName;
         private double balance;
         private Address address;
-        int a = 1;
+        static int z = 1001;
 
+
+        public Account()
+        { }
+
+        public Account(string accountName, double balance, Address address)
+        {
+            //this.accountNumber;
+            this.accountName = accountName;
+            this.balance = balance;
+            this.address = address;
+        }
         public int AccountNumber
         {
-            //set { this.accountName = value; }
-            get { return accountNumber; }
+            //set { this.accountNumber = value; }
+            get { return this.accountNumber; }
         }
 
+        public void print()
+        {
+            accountNumber = z;
+            Console.WriteLine("Your Account No is=" + accountNumber + "\n");
+            z++;
+        }
         public string AccountName
         {
             set { this.accountName = value; }
@@ -36,23 +53,6 @@ namespace lab1
             set { this.address = value; }
             get { return this.address; }
         }
-
-        public void PrintAccount()
-        {
-
-            Console.WriteLine("\nAccount Name:{0}\nBalance:{1}", this.accountName, this.balance);
-            this.address.GetAddress();
-        }
-
-
-
-        public void print()
-        {
-            this.accountNumber = a;
-            Console.WriteLine("Your Account No is=" + this.accountNumber + "\n");
-            a++;
-        }
-
 
 
         public void deposit(double amount)
@@ -91,15 +91,13 @@ namespace lab1
 
 
 
-
-        public void transfer(Account a, double amount)
+        public void transfer(Account receiver, double amount)
         {
             if (amount > 0 && amount <= balance)
             {
                 Console.WriteLine("Previous Balance:	" + this.balance);
                 Console.WriteLine("Transfer Amount:	" + amount);
                 this.balance = this.balance - amount;
-                // a.balance = a.balance + amount;
                 Console.WriteLine("Current Balance:	" + this.balance);
             }
             else
@@ -108,5 +106,10 @@ namespace lab1
             }
         }
 
+        public void ShowAccountInformation()
+        {
+            Console.WriteLine("Account Name:{0}\nBalance:{1}", this.accountName, this.balance);
+            this.address.GetAddress();
+        }
     }
 }
