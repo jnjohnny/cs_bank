@@ -60,7 +60,7 @@ namespace lab1
 
         public void Transaction(int s, params int[] ab)
         {
-            Account a2 = new Account();
+            
             if (s == 2)
             {
                 Console.WriteLine("Enter The Amount You want to Withdraw: ");

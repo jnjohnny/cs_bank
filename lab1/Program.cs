@@ -10,13 +10,13 @@ namespace lab1
     {
         static void Main(string[] args)
         {
-            Bank bank = new Bank("Coders Bank", 4);
-            for (int i = 0; i < 10; i++)
+            Bank bank = new Bank("Coders Bank", 6);
+            for (int i = 0; i < 6; i++)
             {
                 bank.AddAccount(new Account("nayeem", 2000, new Address("20", "10", "Dhaka", "Bangladesh")));
                 bank.AddAccount(new Account("Johnny", 3000, new Address("40", "30", "Chittagong", "Bangladesh")));
                 bank.AddAccount(new Account("John", 4000, new Address("40", "30", "Sylhet", "Bangladesh")));
-                bank.AddAccount(new Account("New Nayeem", 2000, new Address("20", "10", "Dhaka", "Bangladesh")));
+                bank.AddAccount(new Account("Rik", 2000, new Address("20", "10", "Dhaka", "Bangladesh")));
 
             }
             Console.WriteLine("Welcome to the " + bank.BankName);
@@ -46,11 +46,11 @@ namespace lab1
             bank.Transaction(2);
 
             Console.WriteLine("Transfer Balance Option Choosen");
-            bank.Transaction(4);
+            bank.Transaction(4,1002);
 
             Console.WriteLine("Delete Account Option Choosen");
 
-            bank.Deleteccount(2002);
+            bank.Deleteccount(1004);
 
 
             Console.WriteLine("All of the Accounts of the Bank");

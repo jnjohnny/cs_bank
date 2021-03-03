@@ -20,7 +20,7 @@ namespace lab1
 
         public Account(string accountName, double balance, Address address)
         {
-            //this.accountNumber;
+          
             this.accountName = accountName;
             this.balance = balance;
             this.address = address;
@@ -111,6 +111,7 @@ namespace lab1
             
                 Console.WriteLine("Account Name:{0}\nBalance:{1}", this.accountName, this.balance);
                 this.address.GetAddress();
+
             
 
          }
