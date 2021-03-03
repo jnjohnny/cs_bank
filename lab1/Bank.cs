@@ -51,9 +51,14 @@ namespace lab1
                 else if (myBank[i].AccountNumber == accountNumber)
                 {
                     myBank[i] = null;
-                    Console.WriteLine("Account Deleted\n");
+                    
+                    Console.WriteLine("Account Deleted \n");
+                    
                     for (int j = i; j < myBank.Length - 1; j++)
-                    { myBank[j] = myBank[j + 1]; }
+                    { 
+                        myBank[j] = myBank[j + 1]; 
+                    
+                    }
                 }
             }
         }
@@ -95,7 +100,7 @@ namespace lab1
                 }
                 myBank[i].ShowAccountInformation();
                 myBank[i].autoId();
-                
+
             }
         }
 
