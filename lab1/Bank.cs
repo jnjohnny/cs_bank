@@ -11,7 +11,6 @@ namespace lab1
         private string bankName;
         private Account[] myBank;
 
-
         public Bank(string bankName, int size)
         {
             this.bankName = bankName;
@@ -82,7 +81,6 @@ namespace lab1
             {
                 Console.WriteLine("Enter The Account Number Where you want to Transfer");
                 myBank[3].transfer(myBank[1], 50);
-
             }
 
         }
@@ -102,7 +100,7 @@ namespace lab1
 
         public void SearchAccount(int accountNumber)
         {
-            int flag = 0;
+            //int flag = 0;
             for (int i = 0; i < myBank.Length; i++)
             {
                 if (myBank[i] == null)
