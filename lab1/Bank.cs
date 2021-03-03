@@ -100,7 +100,7 @@ namespace lab1
 
         public void SearchAccount(int accountNumber)
         {
-            //int flag = 0;
+            int flag = 0;
             for (int i = 0; i < myBank.Length; i++)
             {
                 if (myBank[i] == null)
