@@ -35,6 +35,7 @@ namespace lab1
                 if (myBank[i] == null)
                 {
                     myBank[i] = account;
+                    break;
                     
                 }
             }

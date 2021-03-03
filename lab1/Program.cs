@@ -17,7 +17,7 @@ namespace lab1
                 bank.AddAccount(new Account("Johnny", 3000, new Address("40", "30", "Chittagong", "Bangladesh")));
                 bank.AddAccount(new Account("John", 4000, new Address("40", "30", "Sylhet", "Bangladesh")));
                 bank.AddAccount(new Account("Rik", 2000, new Address("20", "10", "Dhaka", "Bangladesh")));
-                break;
+                
             }
             Console.WriteLine("Welcome to the " + bank.BankName);
 
