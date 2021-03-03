@@ -98,29 +98,6 @@ namespace lab1
             }
         }
 
-        public void SearchAccount(int accountNumber)
-        {
-            int flag = 0;
-            for (int i = 0; i < myBank.Length; i++)
-            {
-                if (myBank[i] == null)
-                {
-                    continue;
-                }
-                else if (myBank[i].AccountNumber == accountNumber)
-                {
-                    myBank[i].ShowAccountInformation();
-                    flag = 0;
-                    break;
-                }
-                else
-                {
-                    flag = 1;
-                }
-
-            }
-            if (flag == 1)
-                Console.WriteLine("Account not found");
-        }
+        
     }
 }
