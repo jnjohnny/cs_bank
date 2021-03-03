@@ -108,8 +108,12 @@ namespace lab1
 
         public void ShowAccountInformation()
         {
-            Console.WriteLine("Account Name:{0}\nBalance:{1}", this.accountName, this.balance);
-            this.address.GetAddress();
-        }
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Account Name:{0}\nBalance:{1}", this.accountName, this.balance);
+                this.address.GetAddress();
+            }
+
+         }
     }
 }
