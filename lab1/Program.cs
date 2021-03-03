@@ -10,7 +10,7 @@ namespace lab1
     {
         static void Main(string[] args)
         {
-            Bank bank = new Bank("Coders Bank", 10);
+            Bank bank = new Bank("Coders Bank", 4);
             for (int i = 0; i < 10; i++)
             {
                 bank.AddAccount(new Account("nayeem", 2000, new Address("20", "10", "Dhaka", "Bangladesh")));
@@ -55,6 +55,7 @@ namespace lab1
 
             Console.WriteLine("All of the Accounts of the Bank");
             bank.PrintAllAccount();
+            
 
 
         }

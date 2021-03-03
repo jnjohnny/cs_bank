@@ -31,7 +31,7 @@ namespace lab1
             get { return this.accountNumber; }
         }
 
-        public void print()
+        public void autoId()
         {
             accountNumber = z;
             Console.WriteLine("Your Account No is=" + accountNumber + "\n");
@@ -108,12 +108,10 @@ namespace lab1
 
         public void ShowAccountInformation()
         {
-            for (int i = 0; i < 10; i++)
-            {
+            
                 Console.WriteLine("Account Name:{0}\nBalance:{1}", this.accountName, this.balance);
                 this.address.GetAddress();
-                break;
-            }
+            
 
          }
     }

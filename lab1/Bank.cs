@@ -35,7 +35,7 @@ namespace lab1
                 if (myBank[i] == null)
                 {
                     myBank[i] = account;
-                    break;
+                    
                 }
             }
         }
@@ -73,14 +73,14 @@ namespace lab1
             {
                 Console.WriteLine("Enter The Amount You want to Deposit: ");
                 double x = Convert.ToDouble(Console.ReadLine());
-                a2.deposit(x);
+                myBank[2].deposit(x);
 
             }
 
             if (s == 4)
             {
                 Console.WriteLine("Enter The Account Number Where you want to Transfer");
-                myBank[3].transfer(myBank[1], 50);
+                myBank[2].transfer(myBank[1], 120);
             }
 
         }
@@ -94,7 +94,8 @@ namespace lab1
                     continue;
                 }
                 myBank[i].ShowAccountInformation();
-                myBank[i].print();
+                myBank[i].autoId();
+                
             }
         }
 
