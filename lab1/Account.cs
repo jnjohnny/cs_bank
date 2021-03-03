@@ -112,6 +112,7 @@ namespace lab1
             {
                 Console.WriteLine("Account Name:{0}\nBalance:{1}", this.accountName, this.balance);
                 this.address.GetAddress();
+                break;
             }
 
          }
