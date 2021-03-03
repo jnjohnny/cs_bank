@@ -16,14 +16,12 @@ namespace lab1
                 bank.AddAccount(new Account("nayeem", 2000, new Address("20", "10", "Dhaka", "Bangladesh")));
                 bank.AddAccount(new Account("Johnny", 3000, new Address("40", "30", "Chittagong", "Bangladesh")));
                 bank.AddAccount(new Account("John", 4000, new Address("40", "30", "Sylhet", "Bangladesh")));
-               
+                bank.AddAccount(new Account("New Nayeem", 2000, new Address("20", "10", "Dhaka", "Bangladesh")));
+
             }
-
-            Console.WriteLine("   \n ");
-
             Console.WriteLine("Welcome to the " + bank.BankName);
 
-            Console.WriteLine("Choose from the Below Option");
+            Console.WriteLine("Choose your option");
             Console.WriteLine("1. Create an Account");
             Console.WriteLine("2. Withdraw Balance");
             Console.WriteLine("3. Deposit Balance");
@@ -31,13 +29,12 @@ namespace lab1
             Console.WriteLine("5. Delete Account");
             Console.WriteLine("6. Show Account Details ");
 
-            Console.WriteLine("You have choosed to create Account");
-            Console.WriteLine("\n");
+            Console.WriteLine("Account Created");
+           
 
 
             Console.WriteLine("Enter Account Details");
-            bank.AddAccount(new Account("New Nayeem", 2000, new Address("20", "10", "Dhaka", "Bangladesh")));
-
+            
             Console.WriteLine("Account Created successfully");
 
 
